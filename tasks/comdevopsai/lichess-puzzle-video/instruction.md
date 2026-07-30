@@ -20,5 +20,6 @@ Create the following file under `/workspace/artifacts/`
 ## Notes
 
 - Internet access is available — you may install additional packages as needed.
+- `ffmpeg` / `ffprobe` are available on PATH.
 - Python 3.11+ is available.
 - You may choose any rendering approach (Python libraries, command-line tools, etc.).
