@@ -13,7 +13,7 @@ Here is an example response:
 
 ## Deliverables
 
-Create the following files under `/workspace/artifacts/`
+Create the following file under `/workspace/artifacts/`
 
 1. **`video.mp4`** — a silent MP4 video of the chess puzzle with solution.
 
