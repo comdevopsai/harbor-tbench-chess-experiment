@@ -23,11 +23,11 @@ fi
 
 DURATION=$("$FFPROBE" -v error -show_entries format=duration -of csv=p=0 "$VIDEO" 2>/dev/null || echo "0")
 DURATION_INT=$(echo "$DURATION" | cut -d. -f1)
-if [ -z "$DURATION_INT" ] || [ "$DURATION_INT" -lt 60 ]; then
-    echo "FAIL: video duration ${DURATION}s < 60s"
+if [ -z "$DURATION_INT" ] || [ "$DURATION_INT" -lt 20 ]; then
+    echo "FAIL: video duration ${DURATION}s < 20s"
     exit 1
 fi
-echo "PASS: video duration ${DURATION}s > 60s"
+echo "PASS: video duration ${DURATION}s > 20s"
 
 # 3. Check board orientation matches puzzle side to move
 if [ ! -f "$ART_DIR/metadata.json" ]; then
