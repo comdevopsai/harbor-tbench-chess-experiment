@@ -54,9 +54,10 @@ try:
         p = json.loads(resp.read().decode())
         print(p['puzzle']['fen'])
 except Exception:
-    # Network unavailable — use a default puzzle FEN (lichess puzzle from 2026-07-28)
-    # Mate in 2, white to move: Qg6+ Kh8 Qxh7#
-    print('5k1r/pp4pp/2b5/8/6Q1/7P/PPP3P1/2K4R w - - 0 1')
+    # Network unavailable — use a default puzzle FEN
+    # Puzzle YxGsl, black to move (fork/crushing theme)
+    # Fen: r1b1kb1r/pp2qppp/2p5/3P4/2B3n1/2N1B3/PPP2PPP/R2QK2R b KQkq - 1 1
+    print('r1b1kb1r/pp2qppp/2p5/3P4/2B3n1/2N1B3/PPP2PPP/R2QK2R b KQkq - 1 1')
 ")
 
 EXPECTED_ORIENTATION=$(python3 -c "
