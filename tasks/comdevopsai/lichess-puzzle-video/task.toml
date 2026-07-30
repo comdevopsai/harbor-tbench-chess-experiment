@@ -1,0 +1,26 @@
+schema_version = "1.4"
+
+[task]
+name = "comdevopsai/lichess-puzzle-video"
+version = "1.0.0"
+description = "Fetch the daily Lichess puzzle and render a chess puzzle video > 60 seconds with correct board orientation"
+authors = [{name = "Aaron Schneider", email = "commondevops@proton.me"}]
+keywords = ["chess", "lichess", "video", "puzzle", "board-rendering", "ffmpeg"]
+
+[metadata]
+difficulty_explanation = "Requires fetching a live API endpoint, rendering board frames as images, and assembling a video > 60s with correct board orientation matching the side to move"
+category = "programming"
+domain = "software-engineering"
+
+[verifier]
+timeout_sec = 120.0
+
+[agent]
+timeout_sec = 1800.0
+
+[environment]
+cpus = 2
+memory_mb = 4096
+storage_mb = 4096
+gpus = 0
+allow_internet = true
